@@ -18,6 +18,6 @@ exclude:
 
 permalink: "/:title/"
 
-gems: [jekyll-paginate]
+plugins: [jekyll-paginate]
 
 paginate: 10
