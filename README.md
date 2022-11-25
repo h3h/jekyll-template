@@ -25,12 +25,11 @@ Get up & running with a static site quickly.
     $ bundle exec jekyll serve --drafts
     ```
 1. Add your first post in `_posts/`.
-1. Push it to GitHub Pages: `git push -u origin master`.
+1. Push it to GitHub Pages: `git branch -M main && git push -u origin master`.
 1. Set up a Cloudflare site for the domain name, with:
     * CNAME `@` as an alias of `h3h.github.io`
     * CNAME `www` as an alias of `h3h.github.io`
-    * Crypto/SSL set to `Full`
-    * 1 Page Rule: `http://domainname.here/*` to Always Use HTTPS
+    * SSL/TLS encryption mode to `Flexible`
     * Enable Development Mode while testing
 1. Change domain DNS to `mary.ns.cloudflare.com` and `sam.ns.cloudflare.com`.
-1. Update GitHub repository settings to set GitHub Pages source as `master`.
+1. Update GitHub repository settings to set GitHub Pages source as `main`.
